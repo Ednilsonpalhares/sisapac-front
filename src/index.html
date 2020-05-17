@@ -1,13 +1,194 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Sisapac</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
+<html >
+  <head>
+      <meta charset="utf-8"/>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+      <title>SISAPAC</title>
+      <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
+
+      <link href="./assets/css/bootstrap.min.css" rel="stylesheet"/>
+      <link href="./assets/css/AdminLTE.min.css" rel="stylesheet"/>
+      <link href="./assets/css/_all-skins.min.css" rel="stylesheet"/>
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+      <script type="text/javascript" src="./assets/js/jquery-2.2.3.min.js" ></script>
+      <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="./assets/js/app.min.js"></script>
+
+  </head>
+  <body class="hold-transition skin-green-light sidebar-mini">
+      <div class="wrapper">
+          <header class="main-header">
+              <!-- Logo -->
+              <a href="index.xhtml" class="logo">
+                  <!-- mini logo for sidebar mini 50x50 pixels -->
+                  <span class="logo-mini">SPA</span>
+                  <!-- logo for regular state and mobile devices -->
+                  <span class="logo-lg">SISAPAC</span>
+              </a>
+              <!-- Header Navbar: style can be found in header.less -->
+              <nav class="navbar navbar-static-top">
+                  <!-- Sidebar toggle button-->
+                  <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                      <span class="sr-only">Toggle navigation</span>
+                  </a>
+                  <!-- Navbar Right Menu -->
+                  <div class="navbar-custom-menu">
+                      <ul class="nav navbar-nav">
+                          <!-- Messages: style can be found in dropdown.less-->
+                          <li class="dropdown user user-menu">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                  <img src="avatar5.png"/>
+                                  <span class="hidden-xs">Alexander Pierce</span>
+                              </a>
+                              <ul class="dropdown-menu">
+                                  <!-- User image -->
+                                  <li class="user-header">
+                                      <img src="avatar5.png"/>
+                                      <p>
+                                          Alexander Pierce - Web Developer
+                                          <small>Member since Nov. 2012</small>
+                                      </p>
+                                  </li>
+
+                                  <!-- Menu Footer-->
+                                  <li class="user-footer">
+                                      <div class="pull-left">
+                                          <a href="#" class="btn btn-default btn-flat">Perfil</a>
+                                      </div>
+                                      <div class="pull-right">
+                                          <a href="#" class="btn btn-default btn-flat">Sair</a>
+                                      </div>
+                                  </li>
+                              </ul>
+                          </li>
+                      </ul>
+                  </div>
+              </nav>
+          </header>
+          <!-- Left side column. contains the logo and sidebar -->
+          <aside class="main-sidebar">
+              <!-- sidebar: style can be found in sidebar.less -->
+              <section class="sidebar">
+                  <!-- Sidebar user panel -->
+                  <div class="user-panel">
+                      <div class="pull-left image">
+                          <img src="avatar5.png"/>
+                      </div>
+                      <div class="pull-left info">
+                          <p>Alexander Pierce</p>
+                      </div>
+                  </div>
+                  <!-- search form -->
+                  <form action="#" method="get" class="sidebar-form">
+                      <div class="input-group">
+                          <input type="text" name="q" class="form-control" placeholder="Search..."/>
+                          <span class="input-group-btn">
+                              <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                              </button>
+                          </span>
+                      </div>
+                  </form>
+                  <ul class="sidebar-menu">
+                      <li class="treeview">
+                          <a href="index.xhtml">
+                              <i class="fa fa-home"></i>
+                              <span>Paginal Inicial</span>
+                              <span class="pull-right-container">
+                              </span>
+                          </a>
+                      </li>
+                      <li class="treeview">
+                          <a href="#">
+                              <i class="far fa fa-desktop"></i>
+                              <span>Horários</span>
+                              <span class="pull-right-container">
+                                  <i class="far fa fa-angle-left pull-right"></i>
+                              </span>
+                          </a>
+                          <ul class="treeview-menu">
+                              <li><a href=""><i class="fa fa-circle-o"></i>Horário</a></li>
+                              <li><a href=""><i class="fa fa-circle-o"></i>Cadastrar Horário</a></li>
+                          </ul>
+                      </li>
+                      <li class="treeview">
+                          <a href="#">
+                              <i class="fa fa-check-square-o"></i> <span>Frequência</span>
+                              <span class="pull-right-container">
+                                  <i class="far fa fa-angle-left pull-right"></i>
+                              </span>
+                          </a>
+                          <ul class="treeview-menu">
+                              <li><a href=""><i class="fa fa-circle-o"></i>Registrar horário</a></li>
+                              <li><a href=""><i class="fa fa-circle-o"></i>Registrar horário por Data</a></li>
+                              <li><a href=""><i class="fa fa-circle-o"></i>Frequência</a></li>
+                              <li><a href=""><i class="fa fa-circle-o"></i>Todas as Frequências</a></li>
+
+                          </ul>
+                      </li>
+                      <li class="treeview">
+                          <a href="#">
+                              <i class="far fa fa-file-text-o"></i> <span>Relatórios</span>
+                              <span class="pull-right-container">
+                                  <i class="far fa fa-angle-left pull-right"></i>
+                              </span>
+                          </a>
+                          <ul class="treeview-menu">
+                              <li><a href=""><i class="fa fa-circle-o"></i> Simple tables</a></li>
+                              <li><a href=""><i class="fa fa-circle-o"></i> Data tables</a></li>
+                          </ul>
+                      </li>
+                      <li class="treeview">
+                          <a href="#">
+                              <i class="far fa fa-table"></i> <span>Reserva de Sala</span>
+                              <span class="pull-right-container">
+                                  <i class="far fa fa-angle-left pull-right"></i>
+                              </span>
+                          </a>
+                          <ul class="treeview-menu">
+                              <li><a href=""><i class="fa fa-circle-o"></i> Simple tables</a></li>
+                              <li><a href=""><i class="fa fa-circle-o"></i> Data tables</a></li>
+                          </ul>
+                      </li>
+                      <li class="treeview">
+                          <a href="#">
+                              <i class="fa fa-user"></i>
+                              <span>Funcionários</span>
+                              <span class="pull-right-container">
+                                  <i class="far fa fa-angle-left pull-right"></i>
+                              </span>
+                          </a>
+                          <ul class="treeview-menu">
+                              <li><a href=""><i class="fa fa-circle-o"></i>Funcionários</a></li>
+                              <li><a href=""><i class="fa fa-circle-o"></i>Professores</a></li>
+                              <li><a href=""><i class="fa fa-circle-o"></i>Cadastrar Funcionário</a></li>
+                              <li><a href=""><i class="fa fa-circle-o"></i>Cadastrar Professor</a></li>
+                          </ul>
+                      </li>
+                      <li class="treeview">
+                          <a href="#">
+                              <i class="far fa fa-pie-chart"></i> <span>Administração</span>
+                              <span class="pull-right-container">
+                                  <i class="far fa fa-angle-left pull-right"></i>
+                              </span>
+                          </a>
+                          <ul class="treeview-menu">
+                              <li><a href=""><i class="fa fa-circle-o"></i>Salas</a></li>
+                              <li><a href=""><i class="fa fa-circle-o"></i>Disciplinas</a></li>
+                              <li><a href=""><i class="fa fa-circle-o"></i>Cadastrar Sala</a></li>
+                              <li><a href=""><i class="fa fa-circle-o"></i>Cadastrar Disciplina</a></li>
+                          </ul>
+                      </li>
+                  </ul>
+              </section>
+              <!-- /.sidebar -->
+          </aside>
+          <!-- Content Wrapper. Contains page content -->
+          <div class="branco content-wrapper">
+              <!-- Content Header (Page header) -->
+              <section class="content-header">
+
+              </section>
+          </div>
+      </div>
+  </body>
 </html>
